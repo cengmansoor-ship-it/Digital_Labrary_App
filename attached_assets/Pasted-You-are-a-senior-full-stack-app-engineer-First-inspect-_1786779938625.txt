@@ -1,0 +1,104 @@
+You are a senior full-stack app engineer. First inspect the complete existing project, understand its architecture, backend, database, authentication, and working features, then improve it **without unnecessarily rebuilding or breaking anything that already works**.
+
+## Goal
+
+Transform the project into a **modern, lightweight digital library app for one scholar/teacher**, mainly for publishing and reading PDF books.
+
+I will provide:
+
+* `Logo.png`
+* `Welcome Page Picture.png`
+
+## Public Access
+
+The app must be completely public.
+
+* Every user opens the app **without login or registration**.
+* On startup, show `Welcome Page Picture.png` for about **5 seconds**, then automatically open the library.
+* Users can browse, search, open, read, and download PDF books.
+* Login must never block normal users.
+
+## Admin Section
+
+Only Admin should have a separate protected section.
+
+From Admin, the owner must be able to manage the app **without changing source code**, including:
+
+* Add/Edit/Delete PDF books
+* Upload/change book covers
+* Edit title, author, category, description, and other book information
+* Publish/Unpublish books
+* Manage categories
+* Change the displayed library/app name
+* Change the welcome image
+* Change the logo used **inside the app**
+* Edit scholar/profile information
+* Manage other necessary internal app settings
+
+All Admin changes must automatically appear in the public app.
+
+## Logo Rules
+
+There are **two logo behaviors**:
+
+1. **Launcher/App Icon / Favicon**
+
+   * Use my original `Logo.png`.
+   * Display it in a clean **circular-style icon** with proper safe padding.
+   * This icon is **fixed and cannot be changed from Admin**.
+
+2. **Logo inside the app**
+
+   * Also display it in a clean circular shape.
+   * Admin **can replace this internal logo** from Settings.
+
+## Design
+
+Use a **modern, minimal, premium and lightweight UI**.
+
+Main visual direction:
+
+* White background
+* Elegant orange accents
+* White/orange cards and boxes
+* Clean typography
+* Rounded modern cards
+* Soft shadows only where useful
+* Attractive book covers
+* Good spacing
+* Smooth but very light animations
+* Arabic / Pashto / Farsi RTL support
+* Responsive for phones and tablets
+
+The design must be attractive but must **not make the app slow or heavy**.
+
+Avoid:
+
+* unnecessary animations
+* heavy gradients
+* excessive loading screens
+* cluttered layouts
+* outdated UI
+* overly plain/unattractive design
+
+## Technical Rules
+
+Reuse the project's existing technology and backend whenever possible.
+
+Ensure:
+
+* secure Admin authentication
+* persistent settings
+* PDF and cover upload/storage
+* correct deletion of related files/data
+* real-time or immediate synchronization between Admin changes and public app
+* correct Unicode and RTL rendering
+* no fake buttons or placeholder features
+
+Before coding, briefly tell me:
+
+1. What technology the current project uses
+2. What you will keep
+3. What you need to modify
+
+Then implement the **smallest, cleanest and fastest solution** that makes the app production-ready.
